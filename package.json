@@ -1,0 +1,18 @@
+{
+  "name": "iprint",
+  "version": "1.0.1",
+  "description": "iPrint printer",
+  "main": "index.js",
+  "dependencies": {
+    "npm": "^6.9.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "iPrint"
+  ],
+  "author": "Ajith Krish <mailingtoajith@gmail.com>",
+  "license": "ISC"
+}
