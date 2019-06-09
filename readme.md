@@ -2,7 +2,7 @@
 Hi, cosole.log(value);
 is cool but it is very large syntax to type.
 And,  
-how cool if you have just do to type
+how cool if you have to just do type
 ```
   iPrint('Hi');
 ```
@@ -27,7 +27,7 @@ or
 # Example
 ```
 
-  var iPrint = require('iPrint').printer;
+  var iPrint = require('iPrint').iPrinter;
 
   iPrint('Hi, everyone');
 
@@ -35,23 +35,35 @@ or
 
   iPrint('Hi, everyone - Blue Background','bgblue');
 
+  iPrint('iPrintDefaultColor','cyan'); // Changes default output color from 'blue' to 'cyan'
+
+  iPrint('Hi, default color changed form blue to cyan');
+
 ```
 
 ## General Syntax
 
-  Just type as follow
-  1. To just print the string (default color is blue)
-  ```
-      iPrint(value);
-  ```
-  2. To add color to your string
-  ```
-      iPrint(value,colorValue);
-  ```
-  3. To add background color to your string
-  ```
-      iPrint(value,backgroundColorValue)
-  ```
+Just type as follow
+
+1. To just print the string (default color is blue)
+```
+    iPrint(value);
+```
+2. To add color to your string
+```
+    iPrint(value,colorValue);
+```
+3. To add background color to your string
+```
+    iPrint(value,backgroundColorValue);
+```
+4. To change default color to your string
+```
+    iPrint('iPrintDefaultColor',colorValue);
+```
+  'iPrintDefaultColor' is strict notation of changing the default color of output string.
+
+  Here after output's default color will be changed.
 
 # Color Values
 ```
@@ -70,11 +82,11 @@ or
   ```
       iPrint(value,backgroundColorValue);
   ```
-    1. colorValue = 'bgblue'
-    2. colorValue = 'bgred'
-    3. colorValue = 'bggreen'
-    4. colorValue = 'bgyellow'
-    5. colorValue = 'bgcyan'
-    6. colorValue = 'bgwhite'
-    7. colorValue = 'bgblack'
-    8. colorValue = 'bgmagenta'
+  1. colorValue = 'bgblue'
+  2. colorValue = 'bgred'
+  3. colorValue = 'bggreen'
+  4. colorValue = 'bgyellow'
+  5. colorValue = 'bgcyan'
+  6. colorValue = 'bgwhite'
+  7. colorValue = 'bgblack'
+  8. colorValue = 'bgmagenta'

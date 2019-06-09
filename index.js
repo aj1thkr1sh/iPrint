@@ -1,7 +1,14 @@
+let defaultColour = 'blue';
+
 // Returs iPrint printer
-module.exports.printer = function(value,colour='blue'){
+module.exports.iPrinter = function(value,colour=defaultColour){
 
   colour = colour.toLowerCase();
+
+  if(value == 'iPrintDefaultColor'){
+    defaultColour = colour;
+    return;
+  }
 
   var style = '';
   switch(colour){
